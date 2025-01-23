@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import SubscriptionBox from "./SubscriptionBox";
-import WhatsHappening from "./WhatsHappening";
+import SearchBar from "./RightSideBar/SearchBar";
+import SubscriptionBox from "./RightSideBar/SubscriptionBox";
+import WhatsHappening from "./RightSideBar/WhatsHappening";
 
 const RightSideBar = () => {
   const trends = [
