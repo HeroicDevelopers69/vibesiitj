@@ -1,19 +1,16 @@
 import { Routes, Route} from 'react-router-dom';
-import Footer from './components/footer';
 import Navbar from './components/navbar';
-import Home from './pages/home';
+import Index from './pages/index';
 import AboutUs from './pages/aboutUs';
 
 function App() {
   return (
-    <div className="w-full bg-gray-200 min-h-screen">
+    <div className="w-full bg-black min-h-screen text-white">
       <div className="max-w-7xl w-11/12 mx-auto px-4 pt-4 flex flex-col">
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
-        <Footer />
       </div>
     </div>
   );
