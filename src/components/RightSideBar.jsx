@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
+import SearchBar from "./SearchBar";
+import SubscriptionBox from "./SubscriptionBox";
+import WhatsHappening from "./WhatsHappening";
 
 const RightSideBar = () => {
-  return (
-    <div className='w-full col-span-3 min-h-screen bg-gray-900 p-4 ml-6'>
-      RightSideBar
-    </div>
-  )
-}
+  const trends = [
+    { title: "Khloé in Wonder Land", isLive: true },
+    { title: "#GalaxyS25Ultra", subtitle: "Promoted by Samsung India" },
+    { title: "#JalgaonTrainAccident" },
+    { title: "#RailwayLevel1_1Lakh_VacancyDo", subtitle: "51.5K posts" },
+    { title: "#SugandhaMishra" },
+  ];
 
-export default RightSideBar
+  return (
+    <div className="w-80 p-4 bg-slate-950 text-white rounded-xl space-y-4">
+      <SearchBar />
+      <SubscriptionBox />
+      <WhatsHappening trends={trends} />
+    </div>
+  );
+};
+
+export default RightSideBar;
